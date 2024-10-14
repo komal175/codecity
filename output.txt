@@ -1,6 +1,8 @@
-Enter a number (-1 to exit): 5
-Enter a number (-1 to exit): 6
-Enter a number (-1 to exit): 8
-Enter a number (-1 to exit): 42
-Enter a number (-1 to exit): Enter a number (-1 to exit): 45
-Enter a number (-1 to exit): 
+4
+5
+6
+7
+2
+3
+2
+1
