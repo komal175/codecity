@@ -13,13 +13,18 @@ int main(){
         for (int j=0;j<m;++j){
             cout<<a[i][j]<<"  ";
         }
-        cout<<endl;
+        cout<<endl; 
     }
     int sum =0;
     for(int i=0;i<n;++i){
-        for(int j=0;j<m;++j){
-        sum = sum +a[i][j];
-        }
-        cout<<sum;
+        sum = sum +a[i];
     }
+        cout<<sum;
+    int sum1 =0;
+    for(int j=0;j<m;++j){
+        sum1 = sum1 +a[j];
+    }
+        cout<<sum1;
+    int sum2 =sum + sum1;
+    cout <<sum2;
 }
