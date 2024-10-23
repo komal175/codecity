@@ -15,6 +15,7 @@ int main(){
     }
 }
 */
+/*
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -41,5 +42,31 @@ int main() {
 
     return 0;
 }
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    string a;
+    cin >> a;
+    int b =0;
+    int c =0;
+    for(int i=0;i<a.size();++i){
+        if(a[i] == 'z'){
+            b++;
+        }
+        else if(a[i] =='o'){
+            c++;
+        }
+    }
+        if(c == 2*b){
+            cout<<"Yes";
+        }
+        else{
+            cout<<"No";
+        }
+}
+        
+
 
 
