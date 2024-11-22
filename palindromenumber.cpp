@@ -17,6 +17,6 @@ int main(){
         cout<<"True";
     }
     else {
-        cout<<"False";
+        cout<<"false";
     }
 }
