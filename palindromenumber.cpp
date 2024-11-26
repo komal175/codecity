@@ -14,7 +14,7 @@ int main(){
         a = a/10;
     }
     if(b == reverse){
-        cout<<"True";
+        cout<<"true";
     }
     else {
         cout<<"false";
