@@ -1,7 +1,7 @@
 /*#include<bits/stdc++.h>
 using namespace std;
 void hello(){
-    cout <<"Hello World";//doesn't return any value
+    cout <<"Hello World";//void doesn't return any value
 }
 int main(){
     hello();//this is to call the function
