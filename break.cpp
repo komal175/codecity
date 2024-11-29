@@ -4,7 +4,7 @@ int main() {
     int n;
     while(true){
         cin >>n;
-        if (n==76){
+        if (n==79){
             break;
         }
     cout<<n<<endl;
