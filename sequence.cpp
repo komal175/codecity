@@ -6,19 +6,19 @@ int main(){
     while (t--){
     int n;
     cin >>n;
-    int a[n];
+    long long int a[n];
     for(int i =0;i<n;++i){
-    cin >> a[n];
+    cin >> a[i];
     }
-    int r = 1;
+    long long int r = 1;
     for(int i =0;i<n;++i){
-        r = r*1;
+        r = r*a[i];
     }
-    if(r%2==0 || r%3==0 || r%5==0){
+    if(r%10==2 || r%10==3 || r%10==5){
         cout <<"YES"<<endl;
     }
     else{
         cout<<"NO"<<endl;
     }
-    }
+}
 }
