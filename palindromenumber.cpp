@@ -13,6 +13,7 @@ int main(){
         reverse = reverse*10 + a%10;
         a = a/10;
     }
+    cout<<reverse<<endl;
     if(b == reverse){
         cout<<"true";
     }
