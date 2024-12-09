@@ -7,7 +7,7 @@ int main() {
         if (n==79){
             break;
         }
-    cout<<n<<endl;
+    <cout<n<<endl;
     }
     return 0;
 }

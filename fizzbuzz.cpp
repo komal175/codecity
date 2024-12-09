@@ -10,7 +10,7 @@ int main()
         else if(i%5 == 0)
             cout<<"Buzz\n";
         else
-            cout<<i<<"\n";
+        cout<<i<<"\n";
      }
     return 0;
 }
