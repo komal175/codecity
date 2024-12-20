@@ -1,13 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main() {
-    int n;
+    int i;
     while(true){
-        cin >>n;
-        if (n==79){
+        cin >>i;
+        if (i==79){
             break;
         }
-    <cout<n<<endl;
+    <cout<i<<endl;
     }
     return 0;
 }
