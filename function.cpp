@@ -1,12 +1,12 @@
-/*#include<bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 void hello(){
-    cout <<"Hello World";//void doesn't return any value
+    cout <<"Hello My World";//void doesn't return any value
 }
 int main(){
     hello();//this is to call the function
 }
-*/
+
 /*#include<bits/stdc++.h>
 using namespace std;
 int sum(int a,int b){
