@@ -3,10 +3,10 @@ using namespace std;
 int main(){
     int n;
     cin >>n;
-    int cnt=0;
+    int count=0;
     while(n>0){
-        cnt++;
+        count++;
         n=n/10;
     }
-    cout<<cnt;  
+    cout<<count;  
 }
