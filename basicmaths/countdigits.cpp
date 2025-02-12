@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-void  count(int n){
+void  cnt(int n){
     int count =0;
     while(n>0){
         count = count +1;
@@ -11,5 +11,5 @@ void  count(int n){
 int main(){
     int n;
     cin>>n;
-    count(n);
+    cnt(n);
 }
