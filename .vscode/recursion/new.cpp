@@ -4,9 +4,9 @@ int f(n,vector<int> &a){
     int cnt=0;
     for(int j =0;j<n;j++){
         if(a[j]==num){
-            cnt++;
+            cnt = cnt+1;
         }
-        cout<<cnt;
+        return cnt;
     }
 }
 int main(){
