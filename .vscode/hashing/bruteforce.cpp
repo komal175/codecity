@@ -16,9 +16,9 @@ int main(){
     for(int i =0;i<n;i++){
         cin>>a[i];
     }
-    int k;
-    cin>>k;
-    while(k--){
+    int t;
+    cin>>t;
+    while(t--){
         int num;
     }
 }
