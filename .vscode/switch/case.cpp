@@ -19,5 +19,5 @@ int main(){
         case 7:
         cout<<"Sunday";
     }
-    cout<<"CHECK";
+    cout<<"Check";
 }
