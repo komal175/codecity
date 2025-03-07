@@ -7,7 +7,7 @@ int main() {
         if (i==79){
             break;
         }
-    <cout<i<<endl;
+    <cout<i;
     }
     return 0;
 }
