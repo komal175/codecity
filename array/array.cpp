@@ -17,8 +17,9 @@ int main(){
     }
     int sum =0;
     for(int i=0;i<n;++i){
-        for(int j=0;j<m;++j)
+        for(int j=0;j<m;++j){
         sum = sum +a[i][j];
+        }
     }
         cout<<sum;
 }

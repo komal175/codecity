@@ -5,4 +5,4 @@ int main(){
     arr[1][3] =7;
     cout<<arr[1][2];
     return 0;
-    }
+}
