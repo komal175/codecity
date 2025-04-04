@@ -7,7 +7,7 @@ int main() {
     cin >>a>>b;
     cout<<" "<<b.size()<<endl;
     string c = a+b;
-    cout <<c<<endl;
+    cout <<b<<endl;
     swap(a[0],b[0]);
     cout <<a<<" "<<b;
     return 0;
