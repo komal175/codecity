@@ -9,25 +9,17 @@ int main(){
         cout<<a[i]<<" ";
     }
     cout<<endl;
-    //precompute
-    int hash[7]={0};
-    for(int i=0;i<7;i++){
-        cout<<hash[i]<<" ";
-    }
-    cout<<endl;
+    //precomputing
+    unordered_map<int,int> mpp;
     for(int i=0;i<n;i++){
-        hash[a[i]]+=1;
+        mpp[a[i]]++;
     }
-    for(int i=0;i<7;i++){
-        cout<<hash[i]<<" ";
-    }
-    cout<<endl;
-    //fetch
+    //fetching
     int t;
     cin>>t;
     while(t--){
         int num;
         cin>>num;
-        cout<<num<<"--"<<hash[num]<<"\n";
+        cout<<num<<"-->"<<mpp[num]<<"\n";
     }
 }

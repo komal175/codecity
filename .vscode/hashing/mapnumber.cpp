@@ -10,24 +10,21 @@ int main(){
     }
     cout<<endl;
     //precompute
-    int hash[7]={0};
-    for(int i=0;i<7;i++){
-        cout<<hash[i]<<" ";
-    }
-    cout<<endl;
+    map<int,int> mpp;
     for(int i=0;i<n;i++){
-        hash[a[i]]+=1;
+        mpp[a[i]]++;
     }
-    for(int i=0;i<7;i++){
-        cout<<hash[i]<<" ";
+    //for iteration
+    for(auto it:mpp){
+        cout<<it.first<<"-->"<<it.second<<"\n";
     }
-    cout<<endl;
+    cout<<"\n";
     //fetch
     int t;
     cin>>t;
     while(t--){
         int num;
         cin>>num;
-        cout<<num<<"--"<<hash[num]<<"\n";
-    }
+        cout<<num<<"-->"<<mpp[num]<<"\n";
+    } 
 }

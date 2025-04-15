@@ -4,7 +4,7 @@ int f(int n,vector<int> &a,int num){
     int cnt=0;
     for(int i=0;i<n;i++){
         if(a[i]==num){
-            cnt = cnt+1;
+            cnt++;
         }
     }
     return cnt;
@@ -21,6 +21,6 @@ int main(){
     while(t--){
         int num;
         cin>>num;
-        cout<<num<<":"<<f(n,a,num)<<endl;
+        cout<<num<<" appears "<<f(n,a,num)<<" times "<<endl;
     }
 }
