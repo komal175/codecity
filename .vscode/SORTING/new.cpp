@@ -1,38 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-void merge(vector<int> &a,int low,int mid,int high){
-    int left =low;
-    int right=mid+1;
-    vector<int> temp;
-    while(left<=mid && right<=high){
-        if(a[left]<=a[right]){
-            temp.push_back(a[left]);
-            left++;
-        }
-        else{
-            temp.push_back(a[right]);
-            right++;
-        }
-    }
-    while(left<=mid){
-        temp.push_back(a[left]);
-        left++;
-    }
-    while(right<=high){
-        temp.push_back(a[right]);
-        right++;
-    }
-    for(int i=low;i<=high;i++){
-        a[i]=temp[i-low];
-    }
-}
-void ms(vector<int> &a,int low,int high){  //ms means mearge sort for division
-    if(low==high) return;
-    int mid =(low+high)/2;
-    ms(a,low,mid);
-    ms(a,mid+1,high);
-    merge(a,low,mid,high);
-}
 int main(){
     int n;
     cin>>n;
@@ -41,11 +8,15 @@ int main(){
         cin>>a[i];
         cout<<a[i]<<" ";
     }
-    cout<<endl;
-    int low=0;
-    int high=n-1;
-    int mid=(low+high)/2;
-    ms(a,low,high);
+    cout<<"\n";
+    //insertion sort
+    for(int i=1;i<n;i++){
+        int j=i;
+        while(j>0 && a[j-1]>a[j]){
+            swap(a[j-1],a[j]);
+            j--;
+        }
+    }
     for(int i=0;i<n;i++){
         cout<<a[i]<<" ";
     }
