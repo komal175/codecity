@@ -1,22 +1,35 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-int main(){
-    int n;
-    cin>>n;
-    vector<int> a(n);
-    for(int i=0;i<n;i++){
-        cin>>a[i];
-        cout<<a[i]<<" ";
-    }
-    int j=0;
-    for(int i=1;i<n;i++){
-        if(a[i]!=a[j]){
-            a[j+1]=a[i];
-            j++;
+
+pair<int, int> twosum(int n, vector<int>& nums, int target) {
+    map<int, int> mpp;
+    for (int i = 0; i < n; i++) {
+        int a = nums[i];
+        int more = target - a;
+        if (mpp.find(more) != mpp.end()) {
+            return {mpp[more], i};
         }
+        mpp[a] = i;
     }
-    cout<<endl;
-    for(int i=0;i<j+1;i++){
-        cout<<a[i]<<" ";
+    return {-1, -1};
+}
+
+int main() {
+    int n;
+    cin >> n;
+    vector<int> nums(n);
+    for (int i = 0; i < n; i++) {
+        cin >> nums[i];
     }
+    int target;
+    cin >> target;
+
+    pair<int, int> result = twosum(n, nums, target);
+    if (result.first == -1) {
+        cout << "No valid pair found." << endl;
+    } else {
+        cout << result.first << " " << result.second << endl;
+    }
+
+    return 0;
 }
