@@ -1,21 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    //int arr[3][5];
-    //arr[1][3] =7;
-    //cout<<arr[1][2];
-    //return 0;
-    int n;
-    cin>>n;
-    int ans[n][n];
-    for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
-            ans[j][n-i-1]=matrix[i][j];
+    int arr[3][4];
+    for (int i=0;i<3;i++){
+        for(int j=0;j<4;j++){
+            cin>>arr[i][j];
+            arr[2][3]=10;
+            cout<<arr[i][j];
         }
+        cout<<endl;
     }
-    for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
-            matrix[i][j]=ans[i][j];
-        }
-    }
+    return 0;
 }
